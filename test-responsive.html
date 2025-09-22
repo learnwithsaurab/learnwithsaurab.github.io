@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness Test - Learn with Saurab</title>
+    <link rel="stylesheet" href="/modern-style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <style>
+        .test-container {
+            padding: 2rem;
+        }
+        .device-test {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="modern-nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Learn with Saurab</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/courses" class="nav-link">Courses</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <h1>Responsiveness Test</h1>
+        
+        <div class="device-test">
+            <h2>Navigation Test</h2>
+            <p>Try opening and closing the mobile menu.</p>
+        </div>
+        
+        <div class="device-test">
+            <h2>Course Card Test</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <div class="course-image-placeholder"><i class="fas fa-book-open"></i></div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Test Course</h3>
+                        <p class="course-description">This is a test course to check responsiveness.</p>
+                        <div class="course-meta">
+                            <span class="course-price">NPR 999</span>
+                            <div class="course-actions">
+                                <button class="modern-btn btn-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="device-test">
+            <h2>Form Test</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="test-email">Email</label>
+                    <input type="email" id="test-email" class="form-control" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="test-password">Password</label>
+                    <input type="password" id="test-password" class="form-control" placeholder="Your password">
+                </div>
+                <button type="submit" class="auth-btn">Test Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/mobile-nav.js"></script>
+</body>
+</html>
